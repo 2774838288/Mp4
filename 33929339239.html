@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f8fa">
+<title>Voice Note</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f7f8fa;
+  color: #202124;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 25px;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 8px 30px rgba(0,0,0,.07);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.mic {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e8f0fe;
+  font-size: 22px;
+}
+
+h1 { font-size: 20px; margin: 0 0 5px; }
+.subtitle { color: #70757a; font-size: 13px; }
+
+.voice {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 17px;
+  background: #f1f3f4;
+  border-radius: 18px;
+}
+
+.play {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: #1a73e8;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.audio-area { flex: 1; min-width: 0; }
+.audio-label { font-size: 13px; color: #5f6368; }
+.audio-hint { font-size: 11px; color: #80868b; margin-top: 5px; }
+
+.note {
+  margin: 18px 0 22px;
+  color: #5f6368;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.download {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  color: white;
+  background: #1a73e8;
+  text-decoration: none;
+  border-radius: 28px;
+  font-weight: 600;
+}
+
+.download:hover, .play:hover { background: #1558b0; }
+
+.footer {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 12px;
+  color: #80868b;
+}
+</style>
+</head>
+
+<body>
+<main class="card">
+  <div class="header">
+    <div class="mic">🎙️</div>
+    <div>
+      <h1>Voice message</h1>
+      <div class="subtitle">Audio note · Tap to listen</div>
+    </div>
+  </div>
+
+  <div class="voice">
+    <a
+      class="play"
+      href="https://drive.proton.me/urls/2YAP1ZT8K8#1sZnIbbih939"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open voice note"
+      title="Open voice note"
+    >▶</a>
+
+    <div class="audio-area">
+      <div class="audio-label">Voice note</div>
+      <div class="audio-hint">Tap play to open the shared file</div>
+    </div>
+  </div>
+
+  <p class="note">
+    Open the shared file using the play button, or use the download
+    link below to access the file in Proton Drive.
+  </p>
+
+  <a
+    class="download"
+    href="https://drive.proton.me/urls/2YAP1ZT8K8#1sZnIbbih939"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    ↓ Download file
+  </a>
+
+  <div class="footer">
+    Shared via Proton Drive
+  </div>
+</main>
+</body>
+</html>
